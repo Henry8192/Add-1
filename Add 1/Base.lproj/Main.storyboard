@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo-Regular.ttf">
+            <string>Exo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Add_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hxI-C6-Nux"/>
+                        <viewControllerLayoutGuide type="bottom" id="XBa-i3-3Zi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3Gl-LW-nTL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="u79-0q-FpS">
+                                <rect key="frame" x="36" y="50" width="119" height="51"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHX-sh-p2q">
+                                <rect key="frame" x="82" y="61.000000000000007" width="47" height="29.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="pGG-mL-KWQ">
+                                <rect key="frame" x="210" y="49.999999999999993" width="149" height="49.000000000000021"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEJ-YH-b79">
+                                <rect key="frame" x="238.33333333333334" y="60.000000000000007" width="62.333333333333343" height="29.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="30V-nU-PHJ">
+                                <rect key="frame" x="37.666666666666657" y="204" width="300" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Tw6-Oo-jv3"/>
+                                    <constraint firstAttribute="width" constant="300" id="hSY-mv-Hnl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-6h-ptA">
+                                <rect key="frame" x="102" y="222.33333333333334" width="171" height="93.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="70"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.30980392156862746" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="yVd-XM-CD4">
+                                <rect key="frame" x="59.666666666666657" y="354" width="255.99999999999997" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="SgQ-BU-gWx"/>
+                                    <constraint firstAttribute="height" constant="110" id="lii-bF-m5R"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="256" id="qPB-RR-AeO"/>
+                                    <constraint firstAttribute="width" constant="256" id="wQh-tn-76A"/>
+                                </constraints>
+                                <color key="textColor" red="0.41176470588235292" green="0.6588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="inputFieldDidChange" destination="BYZ-38-t0r" eventType="editingChanged" id="w50-HE-ZsQ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 1 to each of the digits. E.X. 1357 becomes 2468, 4390 becomes 5401." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKB-vg-eix">
+                                <rect key="frame" x="16" y="637" width="343" height="96"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aKB-vg-eix" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="12T-qv-k8H"/>
+                            <constraint firstItem="u79-0q-FpS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="1qQ-Bm-9od"/>
+                            <constraint firstItem="3Gl-LW-nTL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2qz-Rr-hZe"/>
+                            <constraint firstItem="3Gl-LW-nTL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="354-Zr-0Q4"/>
+                            <constraint firstItem="30V-nU-PHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bu-im-Bge"/>
+                            <constraint firstItem="aKB-vg-eix" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HNa-iC-JzO"/>
+                            <constraint firstItem="cHX-sh-p2q" firstAttribute="centerY" secondItem="u79-0q-FpS" secondAttribute="centerY" id="KXk-Du-fmP"/>
+                            <constraint firstAttribute="bottom" secondItem="3Gl-LW-nTL" secondAttribute="bottom" id="LS8-MP-47R"/>
+                            <constraint firstItem="JZG-6h-ptA" firstAttribute="centerX" secondItem="30V-nU-PHJ" secondAttribute="centerX" id="Mrf-cu-jo9"/>
+                            <constraint firstAttribute="trailing" secondItem="3Gl-LW-nTL" secondAttribute="trailing" id="OT2-EY-0rK"/>
+                            <constraint firstItem="30V-nU-PHJ" firstAttribute="top" secondItem="u79-0q-FpS" secondAttribute="bottom" constant="103" id="Q2a-J1-cGI"/>
+                            <constraint firstItem="pGG-mL-KWQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ux9-s7-WPx"/>
+                            <constraint firstItem="u79-0q-FpS" firstAttribute="top" secondItem="hxI-C6-Nux" secondAttribute="bottom" constant="6" id="W7A-Q5-vRe"/>
+                            <constraint firstItem="JZG-6h-ptA" firstAttribute="centerY" secondItem="30V-nU-PHJ" secondAttribute="centerY" id="dQV-gL-NDh"/>
+                            <constraint firstItem="yVd-XM-CD4" firstAttribute="top" secondItem="30V-nU-PHJ" secondAttribute="bottom" constant="20" id="gvX-qP-2yQ"/>
+                            <constraint firstItem="cHX-sh-p2q" firstAttribute="centerX" secondItem="u79-0q-FpS" secondAttribute="centerX" constant="10" id="hwM-na-waD"/>
+                            <constraint firstItem="pGG-mL-KWQ" firstAttribute="top" secondItem="hxI-C6-Nux" secondAttribute="bottom" constant="6" id="k9F-Dm-hvl"/>
+                            <constraint firstItem="yVd-XM-CD4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r2Z-N5-2yq"/>
+                            <constraint firstItem="DEJ-YH-b79" firstAttribute="centerX" secondItem="pGG-mL-KWQ" secondAttribute="centerX" constant="-15" id="tS3-Hk-Qy3"/>
+                            <constraint firstItem="XBa-i3-3Zi" firstAttribute="top" secondItem="aKB-vg-eix" secondAttribute="bottom" constant="45" id="uMd-LX-tua"/>
+                            <constraint firstItem="DEJ-YH-b79" firstAttribute="centerY" secondItem="pGG-mL-KWQ" secondAttribute="centerY" id="zAN-M1-Fhg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="yVd-XM-CD4" id="5dl-P7-YQp"/>
+                        <outlet property="numberLabel" destination="JZG-6h-ptA" id="KUa-AD-XEf"/>
+                        <outlet property="scoreLabel" destination="cHX-sh-p2q" id="S0z-qf-yCF"/>
+                        <outlet property="timeLabel" destination="DEJ-YH-b79" id="xa7-dX-RBy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="input" width="256" height="111"/>
+        <image name="number" width="300" height="122"/>
+        <image name="score" width="119" height="51"/>
+        <image name="time" width="149" height="49"/>
+    </resources>
 </document>
