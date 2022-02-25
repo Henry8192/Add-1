@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7C47CA27C9068A00137350 /* Exo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA7C47C927C9068A00137350 /* Exo-Regular.ttf */; };
 		BA85639124D9957A002C78E6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA85639024D9957A002C78E6 /* String.swift */; };
 		BAFFD69C24D83A75009D30C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFFD69B24D83A75009D30C4 /* AppDelegate.swift */; };
 		BAFFD69E24D83A75009D30C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFFD69D24D83A75009D30C4 /* SceneDelegate.swift */; };
@@ -14,7 +15,6 @@
 		BAFFD6A324D83A75009D30C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFFD6A124D83A75009D30C4 /* Main.storyboard */; };
 		BAFFD6A524D83A75009D30C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFFD6A424D83A75009D30C4 /* Assets.xcassets */; };
 		BAFFD6A824D83A75009D30C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFFD6A624D83A75009D30C4 /* LaunchScreen.storyboard */; };
-		BAFFD6CC24D83FAD009D30C4 /* Exo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAFFD6CB24D83FAD009D30C4 /* Exo-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA7C47C927C9068A00137350 /* Exo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Regular.ttf"; sourceTree = "<group>"; };
 		BA85639024D9957A002C78E6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BAFFD69824D83A75009D30C4 /* Add 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Add 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFFD69B24D83A75009D30C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		BAFFD6A924D83A75009D30C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFFD6AE24D83A76009D30C4 /* Add 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Add 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFFD6B924D83A76009D30C4 /* Add 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Add 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAFFD6CB24D83FAD009D30C4 /* Exo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Regular.ttf"; path = "../../../Library/Fonts/Exo-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 				BAFFD6A124D83A75009D30C4 /* Main.storyboard */,
 				BAFFD6A424D83A75009D30C4 /* Assets.xcassets */,
 				BAFFD6A624D83A75009D30C4 /* LaunchScreen.storyboard */,
-				BAFFD6CB24D83FAD009D30C4 /* Exo-Regular.ttf */,
 				BAFFD6A924D83A75009D30C4 /* Info.plist */,
 				BA85639024D9957A002C78E6 /* String.swift */,
+				BA7C47C927C9068A00137350 /* Exo-Regular.ttf */,
 			);
 			path = "Add 1";
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = Lowiro;
 				TargetAttributes = {
 					BAFFD69724D83A75009D30C4 = {
@@ -212,9 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7C47CA27C9068A00137350 /* Exo-Regular.ttf in Resources */,
 				BAFFD6A824D83A75009D30C4 /* LaunchScreen.storyboard in Resources */,
 				BAFFD6A524D83A75009D30C4 /* Assets.xcassets in Resources */,
-				BAFFD6CC24D83FAD009D30C4 /* Exo-Regular.ttf in Resources */,
 				BAFFD6A324D83A75009D30C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +322,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -382,6 +383,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -415,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 895X2HD85T;
 				INFOPLIST_FILE = "Add 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 895X2HD85T;
 				INFOPLIST_FILE = "Add 1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

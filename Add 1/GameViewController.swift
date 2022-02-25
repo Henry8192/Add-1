@@ -60,7 +60,7 @@ class GameViewController: UIViewController {
         if inputText.count != 4 {return}
         var isCorrect = 1
         for n in 0..<4 {
-            var input = inputText.integer(at: n)
+            let input = inputText.integer(at: n)
             let number = numberText.integer(at: n)
             
             if input != (number + 1)%10 {
